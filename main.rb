@@ -24,6 +24,7 @@ def substrings(string, array)
 end
 =end
 
+=begin
 def substrings(string, array)
   splitted_array = string.split(' ')
   array.reduce(Hash.new(0)) do |counter, item|
@@ -35,6 +36,7 @@ def substrings(string, array)
     counter
   end
 end
+=end
 
 p substrings("below", dictionary)
 p substrings("Howdy partner, sit down! How's it going?", dictionary)
