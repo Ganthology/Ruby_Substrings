@@ -26,7 +26,7 @@ end
 
 def substring(string, array)
   array.reduce(Hash.new(0)) do |counter, item|
-    if string.include?(item)
+    if string.downcase.include?(item)
       counter[item] += 1
     end
     counter
