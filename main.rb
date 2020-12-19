@@ -13,7 +13,7 @@ end
 # for each |item| in string
 # first split the string into arrays, then compare the item in string each
 # for each |item| in array
-# =begin
+=begin
 def substrings(string, array)
   array.reduce(Hash.new(0)) do |counter, item|
     if string.include?(item)
@@ -22,9 +22,9 @@ def substrings(string, array)
     counter
   end
 end
-# =end
+=end
 
-=begin
+#=begin
 def substrings(string, array)
   splitted_array = string.split(' ')
   array.reduce(Hash.new(0)) do |counter, item|
@@ -36,7 +36,7 @@ def substrings(string, array)
     counter
   end
 end
-=end
+#=end
 
 p substrings("below", dictionary)
 p substrings("Howdy partner, sit down! How's it going?", dictionary)
