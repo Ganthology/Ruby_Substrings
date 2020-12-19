@@ -2,18 +2,18 @@ dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","o
 
 # for each |item| in array
 # check if string include the item
-# =begin
+=begin
 def substrings(string, array)
   array.select do |item|
     string.include?(item)
   end
 end
-# =end
+=end
 
 # for each |item| in string
 # first split the string into arrays, then compare the item in string each
 # for each |item| in array
-=begin
+# =begin
 def substrings(string, array)
   array.reduce(Hash.new(0)) do |counter, item|
     if string.include?(item)
@@ -22,7 +22,7 @@ def substrings(string, array)
     counter
   end
 end
-=end
+# =end
 
 =begin
 def substrings(string, array)
