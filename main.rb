@@ -15,7 +15,12 @@ end
 # for each |item| in array
 #=begin
 def substrings(string, array)
-  string.split(" ").map{|x| substring(x, array)}
+  results = string.split(" ").map{|x| substring(x, array)}
+  results = results.reduce({}) do |dictionary, item|
+    dictionary.merge!(item) {|key, last, new| last + new}
+    dictionary
+  end
+  results
 end
 #=end
 
